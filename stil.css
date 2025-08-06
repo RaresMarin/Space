@@ -2,6 +2,13 @@ body{
     background-image:url('1.jpg');
     background-repeat:no-repeat;
     background-size:cover;
+    background-attachment: fixed;
+}
+p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:80%;
 }
 .Soare{
     background: radial-gradient(circle, #fff700, #f9a602, #e85d04);
@@ -24,6 +31,9 @@ body{
     width:100%;
 }
 .Planete{
+    color:white;
+    text-align:center;
+    font-size:1.5rem;
     display:grid;
     grid-template-columns: repeat(9,1fr);
     position: relative;
@@ -35,71 +45,71 @@ body{
 .Mercur{
     background: radial-gradient(circle, #6B6B6B 0%, #B0B0B0 80%);;
     height:4vh;
-    width:2vw;
-    border-radius:40vw;
+    width:4vh;
+    border-radius:50%;
     position:relative;
     animation: rotire 5s linear infinite;
 }
 .Venus{
-    border-radius:40vw;
+    border-radius:50%;
     background: radial-gradient(circle, #EED6B7 0%, #C8A165 80%);
     height:8vh;
-    width:4vw;
+    width:8vh;
     position:relative;
     animation: rotire 10s linear infinite;
 
     
 }
 .Terra{
-    border-radius:40vw;
+    border-radius:50%;
     background: radial-gradient(circle, #2E86C1 50%, #229954 60%, #F0E68C 90%);
     height:8vh;
-    width:4vw;
+    width:8vh;
     position:relative;
     animation: rotire 15s linear infinite;
 
 }
 .Marte{
-    border-radius:40vw;
+    border-radius:50%;
     background: radial-gradient(circle, #B03A2E 0%, #D98880 80%);
     height:16vh;
-    width:8vw;
+    width:16vh;
     position:relative;
     animation: rotire 20s linear infinite;
 
 }
 .Jupiter{
-    border-radius:40vw;
+    border-radius:50%;
     background: radial-gradient(circle, #D9B382 0%, #7D6608 80%);
     height:32vh;
-    width:16vw;
+    width:32vh;
     position:relative;
     animation: rotire 25s linear infinite;
 
 }
 .Uranus{
-    border-radius:40vw;
+    border-radius:50%;
     background: radial-gradient(circle, #85C1E9 0%, #154360 80%);
     height:27vh;
-    width:13vw;
+    width:27vh;
     position:relative;
     animation: rotire 35s linear infinite;
 
 }
 .Saturn{
+    border-radius:50%;
     height:35vh;
-    width:17vw;
-    border-radius:40vw;
+    width:35vh;
     background: radial-gradient(circle, #F9E79F 0%, #A04000 80%);
     animation: rotire 30s linear infinite;
 
 }
 .Neptun{
-    border-radius:40vw;
+    border-radius:50%;
     background: radial-gradient(circle, #2980B9 0%, #1B2631 80%);
     height:20vh;
     animation: rotire 40s linear infinite;
-    width:10vw;
+    width:20vh;
     position:relative;
 }
 @keyframes rotire {   
@@ -111,7 +121,7 @@ body{
 
 }
 
-@media (max-width:600px){
+@media screen and (max-width:600px){
     .Soare{
     left: -40vw;
     height:30vh;
@@ -123,27 +133,36 @@ body{
 }
 .Mercur{
     height:1vh;
+    width:1vh;
+
 }
 .Venus{
     height:2vh;
+    width:2vh;
 }
 .Terra{
     height:2vh;
+    width:2vh;
 }
 .Marte{
     height:5vh;
+    width:5vh;
 }
 .Jupiter{
     height:10vh;
+    width:10vh;
 }
 .Uranus{
     height:8vh;
+    width:8vh;
 }
 .Saturn{
     height:10vh;
+    width:10vh;
 }
 .Neptun{
     height:6vh;
+    width:6vh;
 }
 
 }
