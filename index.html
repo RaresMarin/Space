@@ -10,19 +10,25 @@
         <link rel="icon" type="image/png" href="2.png"/>
     </head>
     <body>
+        <div id="Nu">
+            <h1 id="h1"></h1>
+            <div class="Mercur1" id="Mercur1" onclick="Apare()"></div>
+            <p id="p"></p>
+            <button onclick="Apare()" id="buton">Go back to the simulation</button>
+        </div>
         <div class="Flex">
         <div class="Centru">
-            <div class="Soare"></div>
+            <div class="Soare" id="Soare"></div>
         </div>
-        <div class="Planete">
-            <div class="Mercur"><p id="Mercur"></p></div> 
-            <div class="Venus"><p id="Venus"></p></div>
-            <div class="Terra"><p id="Terra"></p></div>
-            <div class="Marte"><p id="Marte"></p></div>
-            <div class="Jupiter"><p id="Jupiter"></p></div>
-            <div class="Saturn"><p id="Saturn"></p></div>
-            <div class="Uranus"><p id="Uranus"></p></div>
-            <div class="Neptun"><p id="Neptun"></p></div>
+        <div class="Planete" id="Plan">
+            <div class="Mercur" onclick="dispare('radial-gradient(circle, #6B6B6B 0%, #B0B0B0 80%)',0)"><p id="Mercur"></p></div> 
+            <div class="Venus" onclick="dispare('radial-gradient(circle, #EED6B7 0%, #C8A165 80%)',1)"><p id="Venus"></p></div>
+            <div class="Terra" onclick="dispare('radial-gradient(circle, #2E86C1 50%, #229954 60%, #F0E68C 90%)',2)"><p id="Terra"></p></div>
+            <div class="Marte" onclick="dispare('radial-gradient(circle, #B03A2E 0%, #D98880 80%)',3)"><p id="Marte"></p></div>
+            <div class="Jupiter" onclick="dispare('radial-gradient(circle, #D9B382 0%, #7D6608 80%)',4)"><p id="Jupiter"></p></div>
+            <div class="Saturn" onclick="dispare('radial-gradient(circle, #F9E79F 0%, #A04000 80%)',5)"><p id="Saturn"></p></div>
+            <div class="Uranus" onclick="dispare('radial-gradient(circle, #85C1E9 0%, #154360 80%)',6)"><p id="Uranus"></p></div>
+            <div class="Neptun" onclick="dispare('radial-gradient(circle, #2980B9 0%, #1B2631 80%)',7)"><p id="Neptun"></p></div>
         </div>
         </div>
         <script src="script.js"></script>
