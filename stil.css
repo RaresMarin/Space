@@ -3,6 +3,7 @@ body{
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 p{
     display:flex;
@@ -43,12 +44,22 @@ p{
     gap:25px;
 }
 .Mercur{
-    background: radial-gradient(circle, #6B6B6B 0%, #B0B0B0 80%);;
+    background: radial-gradient(circle, #6B6B6B 0%, #B0B0B0 80%);
     height:4vh;
     width:4vh;
     border-radius:50%;
     position:relative;
     animation: rotire 5s linear infinite;
+    cursor:pointer;
+}
+.Mercur1{
+    height:40vh;
+    width:40vh;
+    border-radius:50%;
+    position:relative;
+    display: block;
+    margin: auto;
+    cursor:pointer;
 }
 .Venus{
     border-radius:50%;
@@ -57,10 +68,11 @@ p{
     width:8vh;
     position:relative;
     animation: rotire 10s linear infinite;
+    cursor:pointer;
 
-    
 }
 .Terra{
+    cursor:pointer;
     border-radius:50%;
     background: radial-gradient(circle, #2E86C1 50%, #229954 60%, #F0E68C 90%);
     height:8vh;
@@ -70,6 +82,7 @@ p{
 
 }
 .Marte{
+    cursor:pointer;
     border-radius:50%;
     background: radial-gradient(circle, #B03A2E 0%, #D98880 80%);
     height:16vh;
@@ -79,6 +92,7 @@ p{
 
 }
 .Jupiter{
+    cursor:pointer;
     border-radius:50%;
     background: radial-gradient(circle, #D9B382 0%, #7D6608 80%);
     height:32vh;
@@ -88,6 +102,7 @@ p{
 
 }
 .Uranus{
+    cursor:pointer;
     border-radius:50%;
     background: radial-gradient(circle, #85C1E9 0%, #154360 80%);
     height:27vh;
@@ -97,6 +112,7 @@ p{
 
 }
 .Saturn{
+    cursor:pointer;
     border-radius:50%;
     height:35vh;
     width:35vh;
@@ -105,12 +121,40 @@ p{
 
 }
 .Neptun{
+    cursor:pointer;
     border-radius:50%;
     background: radial-gradient(circle, #2980B9 0%, #1B2631 80%);
     height:20vh;
     animation: rotire 40s linear infinite;
     width:20vh;
     position:relative;
+}
+#p{
+    text-align:center;
+    color:white;
+    font-size:2rem;
+    backdrop-filter: blur(12px);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#h1{
+    text-align: center;
+    font-size:4rem;
+    color:white;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Nu{
+    display:none;
+}
+button{
+    float:right;
+    cursor:pointer;
+    margin:15px;
+    padding:20px;
+    border-radius:10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @keyframes rotire {   
      0% {
@@ -121,7 +165,10 @@ p{
 
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:1000px){
+    body{
+        overflow: scroll;
+    }
     .Soare{
     left: -40vw;
     height:30vh;
