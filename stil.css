@@ -60,6 +60,7 @@ p{
     display: block;
     margin: auto;
     cursor:pointer;
+    animation: rotire1 5s linear;
 }
 .Venus{
     border-radius:50%;
@@ -149,6 +150,8 @@ p{
 button{
     float:right;
     cursor:pointer;
+    color:white;
+    border:none;
     margin:15px;
     padding:20px;
     border-radius:10px;
@@ -165,11 +168,23 @@ button{
 
 }
 
-@media screen and (max-width:1000px){
-    body{
+@keyframes rotire1 {   
+     0% {
+    transform: rotate(0deg) translateX(100px) translateY(100px);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(0px) translateY(0);}
+
+}
+@media screen and (max-width:1300px){
+body{
         overflow: scroll;
     }
-    .Soare{
+button{
+    color:white;
+}
+.Soare{
     left: -40vw;
     height:30vh;
     box-shadow:9px 10px 10px 9px #fff700;
