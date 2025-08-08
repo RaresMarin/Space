@@ -48,7 +48,7 @@ function dispare(culoare,index){
     document.getElementById("Mercur1").style.backgroundImage = culoare;
     document.getElementById("p").innerHTML = informatii[index];
     document.getElementById("h1").innerHTML = planete[index];
-    document.getElementById("buton").style.backgroundColor= culoare;
+    document.getElementById("buton").style.backgroundImage= culoare;
 }
 
 function Apare(){
