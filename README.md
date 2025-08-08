@@ -9,6 +9,7 @@ A simulation of the solar system showcasing the motion of the planets orbiting t
 - Each planet is visually distinct with unique colors and sizes  
 - Optional labels to display planet names near their orbits  
 - Interactive or animated solar system view
+- Diverse informations about each planet
 
 ## 🛠️ Technologies Used
 
@@ -20,6 +21,7 @@ A simulation of the solar system showcasing the motion of the planets orbiting t
 
 - Launch the simulation to see planets orbiting the sun.
 - Click to enable planet name labels.
+- Click on a planet to see facts about that specific planet.
 
 ## 📚 Educational Value
 
@@ -27,7 +29,7 @@ This simulation helps visualize and understand:
 
 - Planetary motion  
 - Orbital periods  
-- Relative distances and sizes in the solar system  
+- Relative distances and sizes in the solar system
 
 ## 📄 License
 
