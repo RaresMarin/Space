@@ -38,9 +38,10 @@ const informatii = ["Mercury is the smallest planet in our solar system and near
     "Jupiter is a world of extremes. It's the largest planet in our solar system – if it were a hollow shell, 1,000 Earths could fit inside. It's also the oldest planet, forming from the dust and gases left over from the Sun's formation 4.6 billion years ago. But it has the shortest day in the solar system, taking about 9.9 hours to spin around once on its axis.",
     "Saturn is the sixth planet from the Sun, and the second-largest planet in our solar system.Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium. Saturn is not the only planet to have rings, but none are as spectacular or as complex as Saturn's. Saturn also has dozens of moons.",
     "Uranus is the seventh planet from the Sun, and it has the third largest diameter of planets in our solar system. Uranus appears to spin sideways.Uranus is a very cold and windy world. The ice giant is surrounded by 13 faint rings and 28 small moons. Uranus rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin sideways, orbiting the Sun like a rolling ball.",
-    "Neptune is the eighth and most distant planet in our solar system.Dark, cold, and whipped by supersonic winds, ice giant Neptune is more than 30 times as far from the Sun as Earth. Neptune is the only planet in our solar system not visible to the naked eye. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846."
+    "Neptune is the eighth and most distant planet in our solar system.Dark, cold, and whipped by supersonic winds, ice giant Neptune is more than 30 times as far from the Sun as Earth. Neptune is the only planet in our solar system not visible to the naked eye. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.",
+    "Why is Pluto no longer a planet? Pluto was reclassified as a dwarf planet in 2006 by the International Astronomical Union because other objects might cross its orbit.",
 ];
-const planete = ["Mercury","Venus" , "Earth" , "Mars" , "Jupiter" , "Saturn" , "Uranus" , "Neptun"];
+const planete = ["Mercury","Venus" , "Earth" , "Mars" , "Jupiter" , "Saturn" , "Uranus" , "Neptun" , "Pluto"];
 function dispare(culoare,index){
     document.getElementById("Plan").style.display = "none";
     document.getElementById("Soare").style.display = "none";
