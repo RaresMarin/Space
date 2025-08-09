@@ -3,13 +3,20 @@ body{
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 p{
     display:flex;
     justify-content: center;
     align-items: center;
     height:80%;
+}
+h2{
+    text-align: center;
+    font-size:3rem;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .Soare{
     background: radial-gradient(circle, #fff700, #f9a602, #e85d04);
@@ -30,6 +37,36 @@ p{
     justify-content: baseline;
     height:90vh;
     width:100%;
+}
+.Grid{
+    display:grid;
+    margin-top:100px;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    justify-items: center;
+    align-content: center;
+    
+}
+.Planeta{
+    animation: rotire2 3s linear infinite;
+}
+.Planeta:nth-child(4){
+    animation: rotire2 6s linear infinite;
+}
+.Planeta:nth-child(5){
+    animation: rotire2 6s linear infinite;
+}
+.Planeta:nth-child(6){
+    animation: rotire2 6s linear infinite;
+}
+.Planeta:nth-child(7){
+    animation: rotire2 9s linear infinite;
+}
+.Planeta:nth-child(8){
+    animation: rotire2 9s linear infinite;
+}
+.Planeta:nth-child(9){
+    animation: rotire2 9s linear infinite;
 }
 .Planete{
     color:white;
@@ -60,7 +97,7 @@ p{
     display: block;
     margin: auto;
     cursor:pointer;
-    animation: rotire1 5s linear;
+    animation: rotire1 5s linear infinite;
 }
 .Venus{
     border-radius:50%;
@@ -170,14 +207,34 @@ button{
 
 @keyframes rotire1 {   
      0% {
-    transform: rotate(0deg) translateX(100px) translateY(100px);
+    transform: rotate(0deg) translateX(50px) translateY(50px);
   }
-
   100% {
-    transform: rotate(360deg) translateX(0px) translateY(0);}
+    transform: rotate(360deg) translateX(50px) translateY(50px);}
 
 }
+
+@keyframes rotire2 {   
+     0% {
+    transform: translateX(50px);
+  }
+  50%{
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);}
+
+}
+img{
+    width:78%;
+    height:30vh;
+    border-radius: 100%;
+}
 @media screen and (max-width:1300px){
+    img{
+        width:70%;
+        height:20vh;
+    }
 body{
         overflow: scroll;
     }
