@@ -8,7 +8,9 @@ let uranus = document.getElementById("Uranus");
 let neptun = document.getElementById("Neptun");
 let ok=true
    document.addEventListener("click",() =>{
+    const audio = document.getElementById("piesa");
     if(ok){
+    audio.play();
     mercur.textContent = "Mercury";
     venus.textContent = "Venus";
     pamant.textContent = "Earth";
@@ -19,6 +21,7 @@ let ok=true
     neptun.textContent = "Neptune";
     }
     else{
+    audio.pause();
     mercur.textContent = "";
     venus.textContent = "";
     pamant.textContent = "";
@@ -57,4 +60,5 @@ function Apare(){
     document.getElementById("Soare").style.display = "block";
     document.getElementById("Nu").style.display = "none";
 }
+
    
