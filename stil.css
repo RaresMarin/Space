@@ -41,32 +41,14 @@ h2{
 .Grid{
     display:grid;
     margin-top:100px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(9,1fr);
     gap:10px;
     justify-items: center;
     align-content: center;
     
 }
 .Planeta{
-    animation: rotire2 3s linear infinite;
-}
-.Planeta:nth-child(4){
-    animation: rotire2 6s linear infinite;
-}
-.Planeta:nth-child(5){
-    animation: rotire2 6s linear infinite;
-}
-.Planeta:nth-child(6){
-    animation: rotire2 6s linear infinite;
-}
-.Planeta:nth-child(7){
-    animation: rotire2 9s linear infinite;
-}
-.Planeta:nth-child(8){
-    animation: rotire2 9s linear infinite;
-}
-.Planeta:nth-child(9){
-    animation: rotire2 9s linear infinite;
+    animation: rotire2 10s linear infinite;
 }
 .Planete{
     color:white;
@@ -214,21 +196,18 @@ button{
 
 }
 
-@keyframes rotire2 {   
-     0% {
-    transform: translateX(50px);
-  }
-  50%{
-    transform: translateX(-50px);
-  }
-  100% {
-    transform: translateX(50px);}
-
+@keyframes rotire2 {
+        0%   { transform: translateX(-80%); }
+        25%   { transform: translateX(0%); }
+        50%  { transform: translateX(80%); }
+        75%  { transform: translateX(0%); }
+       100% { transform: translateX(-80%); }
 }
 img{
     width:78%;
     height:30vh;
     border-radius: 100%;
+    cursor:pointer;
 }
 @media screen and (max-width:1300px){
     img{
@@ -283,5 +262,30 @@ button{
     height:6vh;
     width:6vh;
 }
+.Grid{
+    grid-template-columns: repeat(3,1fr);
+}
+.Planeta:nth-child(4){
+    animation: rotire2 6s linear infinite;
 
+}
+.Planeta:nth-child(5){
+    animation: rotire2 6s linear infinite;
+    
+}
+.Planeta:nth-child(6){
+    animation: rotire2 6s linear infinite;
+    
+}
+.Planeta:nth-child(7){
+    animation: rotire2 9s linear infinite;
+    
+}
+.Planeta:nth-child(8){
+    animation: rotire2 9s linear infinite;
+    
+}
+.Planeta:nth-child(9){
+    animation: rotire2 9s linear infinite; 
+}
 }
