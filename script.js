@@ -53,12 +53,12 @@ function dispare(culoare,index){
     document.getElementById("p").innerHTML = informatii[index];
     document.getElementById("h1").innerHTML = planete[index];
     document.getElementById("buton").style.backgroundImage= culoare;
+    document.getElementById("picior").style.marginTop = "-85vh";
 }
 
 function Apare(){
     document.getElementById("Plan").style.display = "flex";
     document.getElementById("Soare").style.display = "block";
     document.getElementById("Nu").style.display = "none";
+    document.getElementById("picior").style.marginTop = "0%";
 }
-
-   
