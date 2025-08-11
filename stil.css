@@ -4,6 +4,8 @@ body{
     background-size:cover;
     background-attachment: fixed;
     overflow-y: scroll;
+    overflow-x: hidden;
+    height:90vh;
 }
 p{
     display:flex;
@@ -119,7 +121,7 @@ h2{
     width:32vh;
     position:relative;
     animation: rotire 25s linear infinite;
-
+    z-index: 0;
 }
 .Uranus{
     cursor:pointer;
@@ -129,6 +131,7 @@ h2{
     width:27vh;
     position:relative;
     animation: rotire 35s linear infinite;
+    z-index: 0;
 
 }
 .Saturn{
@@ -138,6 +141,7 @@ h2{
     width:35vh;
     background: radial-gradient(circle, #F9E79F 0%, #A04000 80%);
     animation: rotire 30s linear infinite;
+    z-index: 0;
 
 }
 .Neptun{
@@ -148,6 +152,21 @@ h2{
     animation: rotire 40s linear infinite;
     width:20vh;
     position:relative;
+    z-index: 0;
+
+}
+footer{
+    background-color: #0a0a0a;
+    width:98%;
+    height:5vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin:0;
+    z-index:12;
+    position: absolute;
+
 }
 #p{
     text-align:center;
@@ -197,17 +216,34 @@ button{
 }
 
 @keyframes rotire2 {
-        0%   { transform: translateX(-80%); }
+        0%   { transform: translateX(-100%); }
         25%   { transform: translateX(0%); }
-        50%  { transform: translateX(80%); }
+        50%  { transform: translateX(100%); }
         75%  { transform: translateX(0%); }
-       100% { transform: translateX(-80%); }
+       100% { transform: translateX(-100%); }
 }
 img{
     width:78%;
     height:30vh;
     border-radius: 100%;
     cursor:pointer;
+}
+span{
+    color:#ffffff;
+    align-items: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color:#fce5c7;
+}
+a:hover{
+    color:#f4ae52;
+}
+a:active{
+    color:#f3971f;
 }
 @media screen and (max-width:1300px){
     img{
