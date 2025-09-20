@@ -16,6 +16,7 @@ p{
 h2{
     text-align: center;
     font-size:3rem;
+    margin-top:100px;
     color:rgb(255, 255, 255);
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -43,7 +44,7 @@ h2{
 .Grid{
     display:grid;
     margin-top:100px;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap:10px;
     justify-items: center;
     align-content: center;
@@ -158,7 +159,7 @@ h2{
 footer{
     background-color: #0a0a0a;
     width:98%;
-    height:5vh;
+    height:2vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -246,6 +247,12 @@ a:active{
     color:#f3971f;
 }
 @media screen and (max-width:1300px){
+    h2{
+        font-size:2rem;
+    }
+    #p{
+        font-size:1rem;
+    }
     img{
         width:70%;
         height:20vh;
@@ -298,8 +305,6 @@ button{
     height:6vh;
     width:6vh;
 }
-.Grid{
-    grid-template-columns: repeat(3,1fr);
 }
 .Planeta:nth-child(4){
     animation: rotire2 6s linear infinite;
@@ -323,5 +328,4 @@ button{
 }
 .Planeta:nth-child(9){
     animation: rotire2 9s linear infinite; 
-}
 }
