@@ -1,4 +1,4 @@
-# 🌌 Solar System Simulation
+# 🌌 Solar System Simulation 
 
 A simulation of the solar system showcasing the motion of the planets orbiting the sun. This project visually represents how each planet travels along its orbital path, demonstrating concepts like orbital speed, distance from the sun, and planetary scale.
 
