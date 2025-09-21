@@ -156,6 +156,25 @@ h2{
     z-index: 0;
 
 }
+#barbuton{
+    color:#fbad52;
+    background-color:transparent;
+    border:5px #e5ddc8 solid;
+    border-radius:20px;
+    position:relative;
+    margin-top:490px;
+    margin-right:260px;
+}
+#barbuton:hover{
+    background-color:rgb(241, 234, 234);
+    border:5px #181817 solid;
+}
+#bici{
+    background-image:url("fundal1.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
 footer{
     background-color: #0a0a0a;
     width:98%;
@@ -164,9 +183,10 @@ footer{
     justify-content: center;
     align-items: center;
     padding:20px;
-    margin:0;
     z-index:12;
+    margin-left:0;
     position: absolute;
+    bottom:0;
 
 }
 #p{
@@ -231,6 +251,8 @@ img{
 }
 span{
     color:#ffffff;
+    display:flex;
+    text-align:center;
     align-items: center;
     font-size: 1rem;
     font-family: sans-serif;
@@ -238,7 +260,7 @@ span{
 }
 a{
     text-decoration: none;
-    color:#fce5c7;
+    color:#fbcc8f;
 }
 a:hover{
     color:#f4ae52;
@@ -304,6 +326,19 @@ button{
 .Neptun{
     height:6vh;
     width:6vh;
+}
+#barbuton{
+    position:relative;
+    margin-top:300px;
+    margin-right:1px;
+}
+footer{
+    font-size:1rem;
+    width:100%;
+    height: auto;
+}
+span{
+    font-size:0.8rem;
 }
 }
 .Planeta:nth-child(4){

@@ -1,13 +1,22 @@
 let ok=true
+
    document.addEventListener("click",() =>{
     const audio = document.getElementById("piesa");
-    if(ok){
+    let vector = ["nbarbu.mp3","nbarbu1.mp3","nbarbu2.mp3","nbarbu3.mp3"];
+    let random = Math.floor(Math.random()*vector.length);
+    let i = 0;
+    if(ok){  
+          audio.src=vector[random];
+          if(random!=0)
+            audio.loop = true;
     audio.play();
+
     }
     else{
     audio.pause();
     }
     ok= !ok;
+    i++;
 })
 const informatii = [
   "Mercur este cea mai mică planetă din sistemul nostru solar și cea mai apropiată de Soare. Este doar puțin mai mare decât Luna Pământului. De pe suprafața lui Mercur, Soarele ar apărea de peste trei ori mai mare decât de pe Pământ, iar lumina solară ar fi de până la șapte ori mai strălucitoare.",
@@ -38,12 +47,12 @@ function dispare(culoare,index){
     document.getElementById("p").innerHTML = informatii[index];
     document.getElementById("h1").innerHTML = planete[index];
     document.getElementById("buton").style.backgroundImage= culoare;
-    document.getElementById("picior").style.marginTop = "-85vh";
+    document.getElementById("picior").style.display = "none";
 }
 
 function Apare(){
     document.getElementById("Plan").style.display = "flex";
     document.getElementById("Soare").style.display = "block";
     document.getElementById("Nu").style.display = "none";
-    document.getElementById("picior").style.marginTop = "0%";
+    document.getElementById("picior").style.display = "flex";
 }
