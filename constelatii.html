@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Constelații</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stil.css">
+        <link rel="icon" type="image/png" href="2.png"/>
+		
+    </head>
+    <body>      
+		  <header>
+  <nav>
+   <li><a href="sistem.html">Planete</a></li>
+  <li><a href="constelatii.html">Constelații</a></li>
+  <li><a href="zodii.html">Astrologie</a></li>
+  <li><a href="poze.html">Galerie</a></li>
+  <li><a href="micro.html">Ilustratii</a></li>
+  <li><a href="expo.html">Exploreaza</a></li>
+  <li><a href="joc.html">Joc</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </nav>
+  </header>
+    <audio id="larisa1" style="display:none" controls>
+		</audio>
+		<img class="rezo" src="p1-removebg-preview.png"/>
+		<img class="rezo" src="p2-removebg-preview.png"/>
+		<img class="rezo" src="p3-removebg-preview.png"/>
+		<img class="rezo" src="p4-removebg-preview.png"/>
+				<h1 id="h1">Constelații</h1>
+		<img class="rezo" src="p5-removebg-preview.png"/>
+		<img class="rezo" src="p6-removebg-preview.png"/>
+		<img class="rezo" src="p7-removebg-preview.png"/>
+		<img class="rezo" src="p8-removebg-preview.png"/>
+		
+		</br></br>
+		
+		<div id="shrimp">
+		<p>
+  Constelațiile sunt grupuri de stele vizibile pe cer, unite imaginar prin linii, astfel incat să formeze diferite figuri oameni, animale, obiecte sau simboluri mitologice. Ele au fost folosite incă din antichitate pentru: -
+
+Orientare - marinarii și călătorii se ghidau după poziția stelelor.
+
+Calendar agricol - apariția sau dispariția anumitor constelații marca schimbarea anotimpurilor.
+
+Mitologie și cultură – fiecare civilizație le-a atribuit povești și semnificații proprii.</p>
+	</div>
+
+	<div id="shrimp">
+<h1>Exemple de constelații:</h1>
+<ol id="ol1" style="font-size:22px; margin-right: 10px; margin-left: 10px;">
+  <li>Cloșca cu puii - este o constelație populară românească care corespunde constelației Lira, având steaua principală Vega. Țăranii o vedeau ca pe o cloșcă înconjurată de pui, iar această imagine le amintea de grija și protecția mamei față de puii ei. Această constelație era ușor de recunoscut pe cerul nopții și simboliza familia și unitatea.
+</li>
+  <li>Coasa - reprezintă în tradiția populară o coasă mare și se identifică cu constelația Lebăda. Forma stelelor amintea oamenilor de o coasă întoarsă și era folosită ca reper pentru momentul optim al muncilor câmpului, legând cerul de activitățile agricole. Simboliza, de asemenea, trecerea timpului și ciclurile naturii.
+</li>
+   <li>Ciobanul - cu oile este o constelație în care oamenii vedeau un păstor care își păzește turmele, corespunzând uneori cu constelația Hercule sau Auriga. Această imagine era apropiată de viața de zi cu zi a țăranilor, amintindu-le de păstorit și responsabilitatea față de animale, iar pe cer servea drept reper pentru orientare și observarea anotimpurilor.
+</li>
+    <li>Fata de împărat - corespunde constelației Fecioara, iar steaua sa principală este Spica. În tradiția populară, constelația era văzută ca o fată frumoasă, fiică de împărat, care răspândește frumusețe și puritate pe cer. Această constelație simboliza fertilitatea, belșugul și grija față de natură, fiind un reper vizual pentru oamenii care priveau cerul în nopțile senine.
+</li>
+	 <li>Carul Mare - face parte din constelația Ursa Mare și este ușor de recunoscut datorită celor șapte stele principale care formează un car cu patru roți și trei boi la jug. Țăranii foloseau această constelație ca ghid pentru orientare, deoarece prelungind timona carului se putea găsi Steaua Polară, iar imaginea ei simboliza drumurile, călătoriile și legătura dintre om și natură.
+</li>
+</ol>
+	</div>
+		
+
+<div class="galerie">
+  <img class="lala" src="c1.jpg" alt="imagine 1">
+  <img class="lala" src="c22.jpg" alt="imagine 2">
+  <img class="lala" src="c33.jpg" alt="imagine 3">
+  <img class="lala" src="c4.jpg" alt="imagine 4"> 
+  <img class="lala" src="c5.jpg" alt="imagine 5">
+  <img class="lala" src="c6.jpg" alt="imagine 6">
+  <img class="lala" src="c77.jpg" alt="imagine 7">
+  <img class="lala" src="c8.jpg" alt="imagine 8">
+
+  <button class="butong" onclick="inainte(-1)">&#10094 Înapoi</button>
+  <button class="butong" onclick="inainte(1)">Înainte &#10095 </button>
+</div>
+<script>
+let imaginea = 1;
+Arata(imaginea);
+
+function inainte(n) {
+  imaginea += n;
+  Arata(imaginea);
+}
+
+function Arata(n) {
+    	let audio = document.getElementById("larisa1");
+	audio.src = "nbarbu1.mp3";
+	audio.play();
+    const imaginii = document.getElementsByClassName('lala');
+  
+    if (n > imaginii.length) {
+        imaginea = 1;
+    }
+    if (n < 1) {
+        imaginea = imaginii.length;
+    }
+
+    for (let i = 0; i < imaginii.length; i++) {
+        imaginii[i].style.display = "none";
+    }
+ if(imaginii[imaginea-1]!=undefined)
+    imaginii[imaginea - 1].style.display = "block";
+
+}
+</script>
+<div id="shrimp">
+<h1>Fun facts</h1>
+<ol id="ol1" style="font-size:22px; margin-right: 10px; margin-left: 10px;">
+<li>Stelele nu sunt apropiate – Deși par unite pe cer, stelele unei constelații pot fi la distanțe uriașe unele de altele, chiar mii de ani-lumină.</li>
+<li>Steaua Polară nu e cea mai strălucitoare – Mulți cred că e cea mai luminoasă de pe cer, dar de fapt ocupă abia locul 48 în clasament.
+</li>
+<li>alea Lactee ascunsă – Multe constelații trec prin Calea Lactee, ascunzând nebuloase și roiuri stelare pe care le poți vedea doar cu telescopul.
+</li>
+<li>Constelații zodiacale – Cele 12 constelații ale zodiacului sunt speciale pentru că se află de-a lungul eclipticii, traseul aparent al Soarelui pe cer.
+</li>
+<li>Stelele se mișcă – În timp de mii de ani, constelațiile își vor schimba forma, pentru că stelele lor au viteze diferite în galaxie.
+</li>
+</ol>
+</div>
+</br>
+<script>
+</script>
+        <footer>
+               <span><a href="https://www.instagram.com/rares_marincas/"> Rares 🐺 </a>
+			   <a href="https://www.instagram.com/_.larisaaaq/"> Larisa 🧸 </a>
+			   <a href="https://www.instagram.com/constantintania_/"> Tania 🦐  </a>
+			   <a href="https://www.instagram.com/roby.peinsta/"> Roby 🐢 </a>
+			   </span>
+        </footer>
+	</body>
+	</html>
