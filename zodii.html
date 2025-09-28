@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Astrologie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stil.css">
+        <link rel="icon" type="image/png" href="2.png"/>
+    </head>
+    <body>
+        
+		  <header>
+  <nav>
+   <li><a href="sistem.html">Planete</a></li>
+  <li><a href="constelatii.html">Constelații</a></li>
+  <li><a href="zodii.html">Astrologie</a></li>
+  <li><a href="poze.html">Galerie</a></li>
+  <li><a href="micro.html">Ilustratii</a></li>
+  <li><a href="expo.html">Exploreaza</a></li>
+  <li><a href="joc.html">Joc</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </nav>
+  </header>
+		<audio id="larisa" style="display:none" controls>
+		</audio>
+	<h1 id="p69">Astrologie</h1>
+	<div id="shrimp">
+	<p>Astrologia își are rădăcinile în civilizațiile antice, unde oamenii priveau cerul pentru a înțelege ritmul naturii și locul lor în univers. Cele 12 zodii sunt împărțite în patru elemente fundamentale – foc, apă, aer, pământ – și fiecare este asociată cu anumite trăsături, simboluri și planete.
+De-a lungul timpului, astrologia a devenit un limbaj al simbolurilor, fascinând prin felul în care leagă oamenii de cosmos și de propria lor natură interioară.</p>
+</div>
+<ul>
+<div id="b">
+<li onclick="berbec()">Berbec</li>
+</div>
+<div id="t">
+<li onclick="taur()">Taur</li>
+</div>
+<div id="f">
+<li onclick="gemeni()">Gemeni</li>
+</div>
+<div id="fu">
+<li onclick="rac()">Rac</li>
+</div>
+<div id="b1">
+<li onclick="leu()">Leu</li>
+</div>
+<div id="b2">
+<li onclick="fecioara()">Fecioară</li>
+</div>
+<div id="b3">
+<li onclick="balanta()">Balanță</li>
+</div>
+<div id="b4">
+<li onclick="scorpion()">Scorpion</li>
+</div>
+<div id="b5">
+<li onclick="sagetator()">Săgetător</li>
+</div>
+<div id="b6">
+<li onclick="capricorn()">Capricorn</li>
+</div>
+<div id="b7">
+<li onclick="varsator()">Vărsător</li>
+</div>
+<div id="b8">
+<li onclick="pesti()">Pești</li>
+</div>
+</ul>
+<h2>Horoscop</h2>
+<p>Ce zodina esti?</p>
+<input type="list" list="zodina" id="bashes" oninput="bashes()" placeholder="Ce zodina esti?"/>
+<p id="soso"></p>
+<datalist id="zodina"></option>
+<option value="Berbec"></option>
+<option value="Taur"></option>
+<option value="Gemeni"></option>
+<option value="Rac"></option>
+<option value="Leu"></option>
+<option value="Fecioara"></option>
+<option value="Balanta"></option>
+<option value="Scorpion"></option>
+<option value="Sagetator"></option>
+<option value="Capricorn"></option>
+<option value="Varsator"></option>
+<option value="Pesti"></option>
+
+</datalist>
+<script>
+	function berbec() {
+         var d = document.getElementById("b");
+         d.innerHTML ="<p>♈ <b> Berbec (21 martie – 19 aprilie)</b> Semn de foc, guvernat de Marte. Energic, curajos și direct. Caută aventura și acțiunea, inițiator al lucrurilor noi</p>";
+         d.style.display = "block";
+		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function taur() {
+         var d = document.getElementById("t");
+         d.innerHTML ="<p>♉ <strong>Taur (20 aprilie – 20 mai)</strong> Semn de pământ, guvernat de Venus. Practic, stabil și atașat de confort. Iubește frumosul și are răbdare.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function gemeni() {
+         var d = document.getElementById("f");
+         d.innerHTML = "<p>♊ <strong>Gemeni (21 mai – 20 iunie)</strong> Semn de aer, guvernat de Mercur. Curios, comunicativ și adaptabil. Îndrăgostit de cunoaștere și schimbare.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function rac() {
+         var d = document.getElementById("fu");
+         d.innerHTML = "<p> ♋<strong> Rac (21 iunie – 22 iulie)</strong> Semn de apă, guvernat de Lună. Sensibil, protector și legat de familie. Are o intuiție puternică.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function leu() {
+         var d = document.getElementById("b1");
+         d.innerHTML = "<p> ♌ <strong> Leu (23 iulie – 22 august)</strong> Semn de foc, guvernat de Soare. Carismatic, generos și plin de energie. Îi place să fie în centrul atenției.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function fecioara() {
+         var d = document.getElementById("b2");
+         d.innerHTML = "<p> ♍<strong>  Fecioară (23 august – 22 septembrie)</strong> Semn de pământ, guvernat de Mercur. Analitic, ordonat și atent la detalii. Orientat spre muncă și perfecțiune.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function balanta() {
+         var d = document.getElementById("b3");
+         d.innerHTML = "<p>♎ <strong>  Balanță (23 septembrie – 22 octombrie)</strong> Semn de aer, guvernat de Venus. Diplomatic, sociabil și atras de armonie. Simbol al echilibrului și dreptății.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function scorpion () {
+         var d = document.getElementById("b4");
+         d.innerHTML = "<p> ♏<strong> Scorpion (23 octombrie – 21 noiembrie)</strong> Semn de apă, guvernat de Marte și Pluto. Intens, pasional și misterios. Reprezintă transformarea și puterea interioară.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function sagetator() {
+         var d = document.getElementById("b5");
+         d.innerHTML = "<p>♐ <strong>  Săgetător (22 noiembrie – 21 decembrie)</strong> Semn de foc, guvernat de Jupiter. Aventurier, optimist și filosof. Iubește libertatea și explorarea.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function capricorn() {
+         var d = document.getElementById("b6");
+         d.innerHTML = "<p>♑ <strong>  Capricorn (22 decembrie – 19 ianuarie)</strong> Semn de pământ, guvernat de Saturn. Ambițios, disciplinat și responsabil. Orientat spre succes și stabilitate.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function varsator() {
+         var d = document.getElementById("b7");
+         d.innerHTML = "<p>♒ <strong>  Vărsător (20 ianuarie – 18 februarie)</strong> Semn de aer, guvernat de Uranus și Saturn. Original, vizionar și independent. Atras de inovație și progres.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+	function pesti() {
+         var d = document.getElementById("b8");
+         d.innerHTML = "<p> ♓<strong>  Pești (19 februarie – 20 martie)</strong> Semn de apă, guvernat de Neptun și Jupiter. Empatic, creativ și visător. Are o lume interioară bogată și spirituală.</p>";
+         d.style.display = "block";
+		 		 d.addEventListener("mouseover" , ()=>{
+		 d.style.backgroundColor = "rgba(0,0,0,0.6)";
+         d.style.backdropFilter = "blur(12px)";
+}		 )
+    }
+
+	
+	</script>
+	        <footer>
+               <span><a href="https://www.instagram.com/rares_marincas/"> Rares 🐺 </a>
+			   <a href="https://www.instagram.com/_.larisaaaq/"> Larisa 🧸 </a>
+			   <a href="https://www.instagram.com/constantintania_/"> Tania 🦐  </a>
+			   <a href="https://www.instagram.com/roby.peinsta/"> Roby 🐢 </a>
+			   </span>
+        </footer>
+	        <script src="script.js"></script>
+	</body>
+	</html>
