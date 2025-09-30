@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stil.css">
+        <link rel="icon" type="image/png" href="2.png"/>
+    </head>
+    <body>
+        <audio id="piesa" src="nbarbu.mp3"></audio>
+        
+    <header>
+  <nav>
+   <li><a href="sistem.html">Planete</a></li>
+  <li><a href="constelatii.html">Constelații</a></li>
+  <li><a href="zodii.html">Astrologie</a></li>
+  <li><a href="poze.html">Galerie</a></li>
+  <li><a href="micro.html">Ilustratii</a></li>
+  <li><a href="joc.html">Joc</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </nav>
+  </header>
+  
+  <h1 id="p69">Contact</h1>
+
+<div style="display:grid;justify-content:center;align-items:center;height:80vh">
+    <form id="formular">
+        <div>
+            <label for="nume">Nume:</label>
+            <input id="nume" type="text" placeholder="Nume"/>
+        </div>
+        <div>
+            <label for="pnume">Prenume:</label>
+            <input id="pnume" type="text" placeholder="Prenume"/>
+        </div>
+        <div>
+            <label for="cnume">Email:</label>
+            <input id="cnume" type="email" placeholder="email@domeniu.com"/>
+        </div>
+        <div>
+            <label for="numec">Culoare:</label>
+            <input id="numec" type="color" />
+        </div>
+        <div>
+            <label for="npume">Parola:</label>
+            <input id="npume" type="password" placeholder="#######"/>
+        </div>
+        <div>
+            <label for="dataNasterii">Data nașterii:</label>
+            <input id="dataNasterii" type="date" />
+        </div>
+        <div style="color:black">
+            <button type="submit" style="color:black">Trimite</button>
+            <button type="reset" style="color:black">Resetează</button>
+        </div>
+    </form>
+</div>
+
+<script>
+document.getElementById("formular").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    localStorage.setItem("nume", document.getElementById("nume").value);
+    localStorage.setItem("pnume", document.getElementById("pnume").value);
+    localStorage.setItem("cnume", document.getElementById("cnume").value);
+    localStorage.setItem("numec", document.getElementById("numec").value);
+    localStorage.setItem("npume", document.getElementById("npume").value);
+    localStorage.setItem("dataNasterii", document.getElementById("dataNasterii").value);
+
+    window.location.href = "contact2.html";  
+});
+</script>
+        <footer>
+               <span><a href="https://www.instagram.com/rares_marincas/"> Rares 🐺 </a>
+			   <a href="https://www.instagram.com/_.larisaaaq/"> Larisa 🧸 </a>
+			   <a href="https://www.instagram.com/constantintania_/"> Tania 🦐  </a>
+			   <a href="https://www.instagram.com/roby.peinsta/"> Roby 🐢 </a>
+			   </span>
+        </footer>
+<script src="script.js"></script>
+</body>
+</html>
