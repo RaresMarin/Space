@@ -161,9 +161,11 @@ h2{
     background-color:transparent;
     border:5px #e5ddc8 solid;
     border-radius:20px;
-    position:relative;
-    margin-top:490px;
-    margin-right:260px;
+    display: grid;
+    place-items: center;
+     font-size: 20px;
+     font-weight: bold;
+     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #barbuton:hover{
     background-color:rgb(241, 234, 234);
@@ -333,9 +335,7 @@ button{
     margin-right:1px;
 }
 footer{
-    font-size:1rem;
-    width:100%;
-    height: auto;
+    display:none;
 }
 span{
     font-size:0.8rem;
