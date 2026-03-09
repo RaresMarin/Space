@@ -31,5 +31,4 @@ function dispare(culoare,index){
 
 function Apare(){
     document.getElementById("Nu").style.display = "none";
-    document.getElementById("picior").style.display = "flex";
 }
