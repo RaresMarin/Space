@@ -22,14 +22,14 @@ const informatii = [
 const planete = ["Mercur","Venus","Pământ","Marte","Jupiter","Saturn","Uranus","Neptun","Pluto"];
 function dispare(culoare,index){
     document.getElementById("Nu").style.display = "block";
+    document.getElementById("Flex").style.display = "none";
     document.getElementById("Mercur1").style.backgroundImage = culoare;
     document.getElementById("p").innerHTML = informatii[index];
     document.getElementById("h1").innerHTML = planete[index];
     document.getElementById("buton").style.backgroundImage= culoare;
-    document.getElementById("picior").style.display = "none";
 }
 
 function Apare(){
     document.getElementById("Nu").style.display = "none";
-    document.getElementById("picior").style.display = "flex";
+    document.getElementById("Flex").style.display = "block";
 }
