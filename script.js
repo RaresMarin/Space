@@ -22,7 +22,6 @@ const informatii = [
 const planete = ["Mercur","Venus","Pământ","Marte","Jupiter","Saturn","Uranus","Neptun","Pluto"];
 function dispare(culoare,index){
     document.getElementById("Nu").style.display = "block";
-    document.getElementById("Flex").style.display = "none";
     document.getElementById("Mercur1").style.backgroundImage = culoare;
     document.getElementById("p").innerHTML = informatii[index];
     document.getElementById("h1").innerHTML = planete[index];
@@ -31,5 +30,4 @@ function dispare(culoare,index){
 
 function Apare(){
     document.getElementById("Nu").style.display = "none";
-    document.getElementById("Flex").style.display = "block";
 }
